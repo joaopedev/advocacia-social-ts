@@ -13,9 +13,9 @@ export const ButtonGoup: React.FC = () => {
     <Box w="100%" p={2} backgroundColor="#581617">
       <VStack>
         <Flex>
-          <Button backgroundColor="#952829" color="white" m={2} onClick={() => scrollToSection('quem-somos')}>Quem Somos</Button>
           <Button backgroundColor="#952829" color="white" m={2} onClick={() => scrollToSection('direito-social')}>Direito Social</Button>
           <Button backgroundColor="#952829" color="white" m={2} onClick={() => scrollToSection('local')}>Local</Button>
+          <Button backgroundColor="#952829" color="white" m={2} onClick={() => scrollToSection('quem-somos')}>Quem Somos</Button>
           <Button backgroundColor="#952829" color="white" m={2} onClick={() => scrollToSection('advogados')}>Advogados</Button>
           <Button backgroundColor="#952829" color="white" m={2} onClick={() => scrollToSection('contatos')}>Contatos</Button>
         </Flex>

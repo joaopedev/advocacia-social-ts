@@ -4,6 +4,7 @@ import SecondImage from "../images/lawer2.png"
 
 export const TextCenter: React.FC = () => {
   return (
+    <VStack>
     <Box id="direito-social" backgroundColor="#581617"   p={2} color="white">
       <VStack>
         <Text as="b" fontSize='5xl'>O que é Direito Social.</Text>
@@ -32,6 +33,7 @@ export const TextCenter: React.FC = () => {
         <Img p={5} src={SecondImage} />
       </VStack>
     </Box>
+    </VStack>
   );
 };
 

@@ -2,6 +2,10 @@ import { Box, Flex, Text, VStack } from "@chakra-ui/react";
 import { FaWhatsapp, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export const Contacts: React.FC = () => {
+  const whatsappLink =
+    "https://wa.me/5527996426334?text=Ol%C3%A1%2C+tudo+bem%3F";
+  const emailLink = "advocaciasociales@gmail.com";
+
   return (
     <VStack id="contatos" p={6} backgroundColor="#581617">
       <Box
@@ -17,18 +21,22 @@ export const Contacts: React.FC = () => {
           </Text>
         </VStack>
       </Box>
-      <Flex   m={10} >
+      <Flex m={10}>
         <Box w="70%" p={3}>
-          <FaWhatsapp />
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp />
+          </a>
         </Box>
         <Box p={3}>
           <FaInstagram />
         </Box>
         <Box p={3}>
           <FaTwitter />
-        </Box> 
+        </Box>
       </Flex>
-      <Text> Email: advocaciasociales@gmail.com</Text>
+      <a href={emailLink} target="_blank" rel="noopener noreferrer">
+        <Text> Email: advocaciasociales@gmail.com</Text>
+      </a>
     </VStack>
   );
 };
