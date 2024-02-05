@@ -95,6 +95,7 @@ export const Lawyer: React.FC = () => {
                       <Avatar name={lawyer.name} />
                       <Box>
                         <Heading
+                          as="b"
                           fontStyle="Numans"
                           fontFamily="Numans"
                           color="white"
@@ -125,9 +126,10 @@ export const Lawyer: React.FC = () => {
                     fontStyle="Numans"
                     fontFamily="Numans"
                     color="white"
+            
                   >
                     {`Tel: ${lawyer.phone}`} <br />
-                    {`E-mail: ${lawyer.email}`}
+                    {`Email: ${lawyer.email}`}
                   </Text>
                 </CardBody>
               </Card>
