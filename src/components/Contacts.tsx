@@ -22,20 +22,20 @@ export const Contacts: React.FC = () => {
         </VStack>
       </Box>
       <Flex m={10}>
-        <Box w="70%" p={3}>
+        <Box color="white" w="70%" p={3}>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
             <FaWhatsapp />
           </a>
         </Box>
-        <Box p={3}>
+        <Box color="white" p={3}>
           <FaInstagram />
         </Box>
-        <Box p={3}>
+        <Box color="white" p={3}>
           <FaTwitter />
         </Box>
       </Flex>
       <a href={emailLink} target="_blank" rel="noopener noreferrer">
-        <Text> Email: advocaciasociales@gmail.com</Text>
+        <Text color="white"> Email: advocaciasociales@gmail.com</Text>
       </a>
     </VStack>
   );
